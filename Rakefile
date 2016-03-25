@@ -17,7 +17,5 @@ namespace :build do
         sh 'mv', f.chomp('.md') + '.pdf', '../docs'
       end
     end
-    Dir.chdir("..");
-    Dir.delete(GAME_DIR);
   end
 end
